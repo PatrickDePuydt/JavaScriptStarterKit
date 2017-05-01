@@ -4,6 +4,7 @@ import { getUsers } from './api/userApi.js';
 
 // Populate table of users via API call.
 getUsers().then(result => {
+    // console.log(result);
     let usersBody = "";
 
     result.forEach(user => {

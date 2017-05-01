@@ -7,6 +7,11 @@
 
 `npm run localtunnel`: Use this command in a new terminal window to expose a global IP if the environment is running.
 
+#### Mock Data Generation
+`generate-mock-data`: Generate mock data for JSON server via schema.
+
+`start-mockapi`: Start JSON server
+
 ### Links
 #### Travis
 https://travis-ci.org/PatrickDePuydt/JavaScriptStarterKit
