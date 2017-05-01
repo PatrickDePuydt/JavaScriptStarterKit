@@ -1,7 +1,20 @@
+* {
+	font-family: sans-serif;	
+}
+
+a.deleteUser {
+	color: dodgerblue;
+	text-decoration: none;
+	border-bottom:3px solid dodgerblue;
+}
+
 h1 {
 	border: 5px solid mediumspringgreen;
 	font-size: 50px;
-	font-family: sans-serif;
 	color: springgreen;
 	display: inline;
+}
+
+tr {
+	margin-bottom: 5px;
 }
