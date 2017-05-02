@@ -1,11 +1,16 @@
+/* eslint-disable no-console */
 import express from 'express';
 import path from 'path';
 import open from 'open';
+import compression from 'compression';
 
-
-/* eslint-disable no-console */
 const port = 3000;
 const app = express();
+
+
+app.use(compression());
+app.use(express.static('dist'));
+
 
 // Routing
 // Index Route
@@ -38,10 +43,6 @@ app.get('/users', function(req, res) {
     ]);
 });
 
-
-app.use(express.static('dist'));
-
-app.use(compression()); // eslint-disable-line no-undef
 
 // Listen
 app.listen(port, function(error) {

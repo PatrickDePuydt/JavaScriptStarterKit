@@ -1,16 +1,15 @@
+/*eslint-disable no-console*/
 import webpack from 'webpack';
 import webpackConfig from '../webpack.config.prod';
 import chalk from 'chalk';
 
 process.env.NODE_ENV = 'production';
 
-console.log(chalk.blue('Generating production bundle. This might take a while... grab some coffee')); // eslint-disable-line no-console
-
-/*eslint-disable no-console*/
+console.log(chalk.blue('Generating production bundle. This might take a while... grab some coffee'));
 
 webpack(webpackConfig).run((err, stats) => {
     if (err) {
-        console.log(chalk.red(err)); // eslint-disable-line no-console
+        console.log(chalk.red(err));
         return 1;
     }
 
