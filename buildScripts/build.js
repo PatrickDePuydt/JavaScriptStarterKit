@@ -6,6 +6,7 @@ process.env.NODE_ENV = 'production';
 
 console.log(chalk.blue('Generating production bundle. This might take a while... grab some coffee')); // eslint-disable-line no-console
 
+/*eslint-disable no-console*/
 
 webpack(webpackConfig).run((err, stats) => {
     if (err) {

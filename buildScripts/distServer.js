@@ -41,7 +41,7 @@ app.get('/users', function(req, res) {
 
 app.use(express.static('dist'));
 
-app.use(compression());
+app.use(compression()); // eslint-disable-line no-undef
 
 // Listen
 app.listen(port, function(error) {
