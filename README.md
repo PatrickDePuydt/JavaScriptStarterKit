@@ -16,3 +16,7 @@
 #### Travis
 https://travis-ci.org/PatrickDePuydt/JavaScriptStarterKit
 
+##### TODO
+Add Sass
+Docker
+Add Common Js Functions Utils
