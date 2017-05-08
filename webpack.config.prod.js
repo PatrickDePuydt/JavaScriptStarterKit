@@ -14,10 +14,11 @@ export default {
     output: {
         path: path.resolve(__dirname, 'dist'),
         publicPath: '/',
-        filename: '[name].js'
+        filename: '[name].js' // [] = placeholder in this case, use names defined in entry point
     },
     plugins: [
-        // Use CommonsChunkPlugin
+        // Use CommonsChunkPlugin to chunk/bundle split
+        // Important! The name value must match the key name declared in the entry object above.
         new webpack.optimize.CommonsChunkPlugin({
             name: 'vendor'
         }),
