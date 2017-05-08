@@ -1,6 +1,7 @@
 import path from 'path';
 import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
 export default {
     debug: true,
@@ -22,6 +23,9 @@ export default {
         new webpack.optimize.CommonsChunkPlugin({
             name: 'vendor'
         }),
+
+        // Generate CSS file
+        new ExtractTextPlugin('[name].css'),
 
         // Elimate duplicate packages
         new webpack.optimize.DedupePlugin(),
@@ -54,9 +58,12 @@ export default {
                 exclude: /node_modules/,
                 loaders: ['babel']
             },
+            // {   test: /\.css$/, 
+            //     loader: ExtractTextPlugin.extract('css?sourceMap')
+            // },
             {
                 test: /\.css$/,
-                loaders: ['style', 'css']
+                loader: ExtractTextPlugin.extract('css?sourceMap')
             }
         ]
     }
