@@ -2,7 +2,7 @@
 
 ## Running the Environment
 ### Start
-```npm run start -s```
+#### ```npm run start -s```
 
 Will silence much of the console output. 
 
@@ -14,18 +14,18 @@ If you wat the full output, use `npm run start`. The application  will start the
 + Mocha Tests
 + Babel Transpiling
 + Start Mock API
-	..+ Generate Mock Data
-	..+ Start JSON Server
++ Generate Mock Data
++ Start JSON Server
 
 
-
+***
 #### Share Mode
 `npm run share`: Start the app and expose a global URL to share with clients. Note that this is a separate command and cannot but run in conjunction with `npm start`.
 
 `npm run localtunnel`: Use this command in a new terminal window to expose a global IP if the environment is running.
 
 
-
+***
 #### Mock Data Generation
 `generate-mock-data`: Generate mock data for JSON server via schema.
 
@@ -36,6 +36,6 @@ If you wat the full output, use `npm run start`. The application  will start the
 https://travis-ci.org/PatrickDePuydt/JavaScriptStarterKit
 
 ##### TODO
-Add Sass
-Docker
-Add Common Js Functions Utils
++ Add Sass
++ Docker
++ Add Common Js Functions Utils
