@@ -38,6 +38,7 @@ https://travis-ci.org/PatrickDePuydt/JavaScriptStarterKit
 ##### TODO
 + Browsersync Server
 + Add Sass
++ Webpack 2
 + Demo App
 + Docker
 + Add Common Js Functions Utils
