@@ -36,6 +36,8 @@ If you wat the full output, use `npm run start`. The application  will start the
 https://travis-ci.org/PatrickDePuydt/JavaScriptStarterKit
 
 ##### TODO
++ Browsersync Server
 + Add Sass
++ Demo App
 + Docker
 + Add Common Js Functions Utils
