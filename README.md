@@ -2,18 +2,20 @@
 
 ## Running the Environment
 ### Start
-Use _`npm run start -s`_ which will silence much of the console output. 
+```npm run start -s```
+
+Will silence much of the console output. 
 
 If you wat the full output, use `npm run start`. The application  will start the following services either way.
 
-• Security Check
-• Linting
-• Watching
-• Mocha Tests
-• Babel Transpiling
-• Start Mock API
-	• Generate Mock Data
-	• Start JSON Server
++ Security Check
++ Linting
++ Watching
++ Mocha Tests
++ Babel Transpiling
++ Start Mock API
+	..+ Generate Mock Data
+	..+ Start JSON Server
 
 
 
